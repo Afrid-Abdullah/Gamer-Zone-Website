@@ -439,6 +439,8 @@ body {
 
 @media screen and (max-width:425px) {
 
+
+    
     .nav-container{
         flex-direction: column;
         justify-content: center;
@@ -448,6 +450,7 @@ body {
 
     .nav-item-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .nav-item-container a{
@@ -467,7 +470,8 @@ body {
         text-align: center;
         margin-bottom: 50px;
       }
-    
+
+     
       .banner-img {
         width: 100%;
         
@@ -523,8 +527,8 @@ body {
       .icon-section{
         margin-top: 90px;
         grid-template-columns: repeat(3, 1fr);
-        /* margin-left: 100px ;
-        margin-right: 100px;
+         margin-left: 100px ;
+        /* margin-right: 100px; */
          */
       }
 
@@ -532,21 +536,103 @@ body {
         width: 10%;
       }
 
+      .footer {
+        margin-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
 
+      .footer-option {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+      }
 
+      .footer-icon {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
 
+      }
 
+      .icon {
+        font-size: 30px;
+      }
 
-
-
+      .footer-text {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
 
     
 } 
 
 
-@media screen and (min-width:576) and (max-width:768px) {
 
- 
-
+@media screen and (min-width:576px) and (max-width:768px){
+    .nav-container {
+        flex-wrap: wrap;
+      }
     
-} 
+      .nav-item-container {
+        margin-top: 20px;
+        justify-content: center;
+      }
+
+      .banner {
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+      }
+    
+    
+      .banner-content {
+        width: 100%;
+        text-align: center;
+
+      }
+
+      .banner-content h1{
+        text-align: center;
+      }
+
+      .banner-img{
+        width: 100%;
+      }
+
+      .online-games-img {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: center;
+      }
+    
+      .play-instantly {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+      }
+    
+      .play-instantly-img {
+        text-align: center;
+        position: relative;
+      }
+    
+      .angela {
+        width: 50%;
+        position: absolute;
+        left: -100px;
+        bottom: -60px;
+        
+      }
+   
+      .icon-section {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+
+}
