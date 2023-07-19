@@ -12,12 +12,6 @@ body {
 
 
 
-/* .header {
-    max-width: 1440px;
-    margin: 0 auto;
-
-} */
-
 /* nav section */
 
 .nav-container {
@@ -229,13 +223,13 @@ body {
 
 
 
-/* Styles for the image container */
+
 .img {
     position: relative;
     display: inline-block;
 }
 
-/* Styles for the overlay */
+
 .overlay {
     display: none;
     position: absolute;
@@ -250,42 +244,31 @@ body {
     padding-top: 40%;
 }
 
-/* Styles for the icon and text */
+
 .overlay .iicons,
 .overlay .ttext {
     display: block;
 }
 
-/* Styles for the icon */
+
 .overlay .iicons {
     font-size: 24px;
-    /* Adjust the icon size as needed */
+    
 }
 
 /* Styles for the text */
 .overlay .ttext {
     font-size: 16px;
-    /* Adjust the text size as needed */
+    
 }
 
-/* Show the overlay on hover */
+
 .img:hover .overlay {
     display: block;
 }
 
-/* .img2:hover .overlay {
-        display: block;
-      }
-      
-      .img3:hover .overlay {
-        display: block;
-      }
 
-      .img4:hover .overlay {
-        display: block;
-      } */
 
-/* play instantly section */
 
 .play-instantly {
     max-width: 1440px;
@@ -313,10 +296,10 @@ body {
 }
 
 .instantly-title {
-    color: #F948B2;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .play-instantly-description {
@@ -360,64 +343,16 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 120px;
-    display: flex;
-    flex-wrap: wrap;
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: auto auto;
+    flex-wrap: wrap;
+    text-align: center;
+    /* grid-template-rows: auto auto; */
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 20px;
 
+
+
 }
-
-
-/* .icon-section1 {
-    
-    display: flex;
-    flex-basis: 100%;
-    justify-content: center;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr); */
-
-
-/* } */
-
-/* .icon-section2 {
-    display: flex;
-    flex-basis: 90%;
-    
-} */
-
-
-
-.icons-row-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 95%;
-    height: 80px;
-    padding: 0 10px;
-    border-radius: 50px;
-    grid-column: 1 / span 5;
-    justify-self: center;
-}
-
-
-.icons-row-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 90%;
-    height: 80px;
-    padding: 0 10px;
-    border-radius: 50px;
-    grid-column: 1 / span 5;
-    justify-self:
-}
-
 
 
 .icons {
@@ -432,21 +367,18 @@ body {
     margin: 10px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     border: 2px solid white;
-    transition: border-color 0.3s, color 0.3s; 
+    transition: border-color 0.3s, color 0.3s;
 
 }
 
-/* .box{
-    width: auto;
-    padding: 10px;
-} */
 
 .icons:hover {
-    border-color: #FF42A5; /* Change border color on hover */
-   
-  }
+    border-color: #FF42A5;
+    
 
-.icons:hover h5{
+}
+
+.icons:hover h5 {
     color: #FF42A5;
 }
 
@@ -549,17 +481,13 @@ body {
     font-weight: 500;
 }
 
-/* .hide {
-        display: none;
-    } */
-
 
 
 
 
 
 /* responsive for mobile */
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
 
 
 
@@ -581,7 +509,7 @@ body {
 
 
     .banner {
-
+        margin-top: 50px;
         flex-direction: column;
         align-items: center;
         padding: 0 20px;
@@ -591,6 +519,10 @@ body {
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    .banner-content h1 {
+        text-align: center;
     }
 
 
@@ -619,17 +551,14 @@ body {
     }
 
     .overlay {
-        width: 81%;
-        height: 85%;
-        margin-left: 38px;
+        width: 80%;
+        height: 91%;
+        margin-left: 55px;
     }
 
     .img-online {
         width: 80%;
     }
-
-
-
 
     .play-instantly {
         margin-top: 20px;
@@ -661,23 +590,15 @@ body {
 
     .icon-section {
         margin-top: 90px;
+        width: 100%;
         flex-wrap: wrap;
         display: grid;
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         /* overflow: hidden; */
-    
+
     }
 
-    /* .icon-section1,
-    .icon-section2 {
-        display: flex;
-        flex-basis: 80%;
-    }
 
-    .icons {
-        display: flex;
-        flex: 1 0 calc(33.33% - 20px);
-    } */
 
     .footer {
         margin-top: 80px;
@@ -715,7 +636,9 @@ body {
 
 
 
-@media screen and (min-width:576px) and (max-width:768px) {
+/* tablet responsive */
+
+@media screen and (min-width:577px) and (max-width:768px) {
     .nav-container {
         flex-wrap: wrap;
     }
