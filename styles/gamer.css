@@ -78,9 +78,14 @@ body {
     padding: 17px 24px;
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    
 
 
+
+}
+
+.fa-brands{
+    margin-left: 5px;
 }
 
 /* banner */
